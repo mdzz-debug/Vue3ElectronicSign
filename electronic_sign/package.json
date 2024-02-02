@@ -1,0 +1,12 @@
+{
+  "name": "electronic_sign",
+  "version": "1.0.0",
+  "description": "电子签名",
+  "main": "electronic_sign.common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["vue3", "electron", "signature"],
+  "author": "luohao",
+  "license": "ISC"
+}
