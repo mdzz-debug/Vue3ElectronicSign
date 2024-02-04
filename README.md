@@ -8,15 +8,26 @@
 
 1. ElectronicSign 电子签名
    ```vue
-   <!-- 电子签名组件 -->
-   
-   <ElectronicSign
-       ref="Sign"
-       radius="5"
-       width="300px"
-       height="200px"
-       color="#000"
-       weight="3"
+   <!--   width 宽度-->
+   <!--   height 高度-->
+   <!--   radius 圆角-->
+   <!--   padding 内边距-->
+   <!--   border 边框-->
+   <!--   backgroundCanvas 画布背景-->
+   <!--   backgroundPadding 画布内边距背景-->
+   <!--   color 画笔颜色-->
+   <!--   lineWidth 画笔宽度-->
+   <electronic-sign
+      width="500"
+      height="300"
+      radius="10px"
+      padding="10px"
+      border="1px solid #000"
+      backgroundCanvas="black"
+      backgroundPadding="#fff"
+      color="gold"
+      lineWidth="3"
+      ref="Sign"
    />
    
    <script setup>
@@ -28,3 +39,5 @@
        // Sign.value.downloadSign() 获取签名图片
    </script>
    ```
+   
+![img.png](img.png)
