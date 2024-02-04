@@ -40,4 +40,4 @@
    </script>
    ```
    
-![img.png](img.png)
+![img.png](./public/image.gif)
