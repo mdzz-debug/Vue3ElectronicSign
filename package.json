@@ -1,7 +1,7 @@
 {
-  "name": "electronic-sign-ts",
+  "name": "electronic-sign",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "luohao",
   "description": "electronic-sign",
   "keywords": [
@@ -14,9 +14,10 @@
     "sign"
   ],
   "type": "module",
-  "main": "lib/vue3-ts-electronic-sign.umd.cjs",
+  "main": "./lib/electronic-sign.umd.cjs",
+  "module": "./lib/electronic-sign.umd.cjs",
   "files": [
-    "lib/*"
+    "lib"
   ],
   "repository": {
     "type": "git",
@@ -27,13 +28,11 @@
     "email": "1356060370@qq.com"
   },
   "scripts": {
-    "package": "npm run build && npm pack",
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc --noEmit --skipLibCheck && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.6.7",
     "vue": "^3.3.11"
   },
   "devDependencies": {
@@ -41,7 +40,6 @@
     "@vitejs/plugin-vue": "^4.5.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
-    "vite-plugin-dts": "^3.7.2",
     "vue-tsc": "^1.8.25"
   }
 }
