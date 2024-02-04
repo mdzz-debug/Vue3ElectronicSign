@@ -35,8 +35,8 @@
         const Sign = ref()
        // Sign.value.getSignByFormData() 获取签名图片到FormData
        // Sign.value.getSignByBase64() 获取Base64签名图片
-       // Sign.value.clearSign() 清除签名
-       // Sign.value.downloadSign() 获取签名图片
+       // Sign.value.clear() 清除签名
+       // Sign.value.download() 获取签名图片
    </script>
    ```
    
