@@ -1,31 +1,8 @@
 {
-  "name": "electronic-sign-ts",
-  "private": false,
-  "version": "1.0.0",
-  "author": "luohao",
-  "description": "electronic-sign",
-  "keywords": [
-    "javascript",
-    "plugins",
-    "vue3",
-    "vite",
-    "typescript",
-    "electronic",
-    "sign"
-  ],
+  "name": "ts_package",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "main": "lib/vue3-ts-electronic-sign.umd.cjs",
-  "files": [
-    "lib/*"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mdzz-debug/Vue3ElectronicSign"
-  },
-  "bugs": {
-    "url": "https://github.com/mdzz-debug/Vue3ElectronicSign/issues",
-    "email": "1356060370@qq.com"
-  },
   "scripts": {
     "package": "npm run build && npm pack",
     "dev": "vite",
