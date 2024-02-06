@@ -9,8 +9,8 @@ export default defineConfig({
         outDir: 'lib', // 库模式, 打包后文件夹
         lib: {
             entry: resolve(__dirname, './examples/packages'), // 入口
-            name: 'vue3TsElectronicSign',
-            fileName: 'vue3-ts-electronic-sign', // 打包后名字
+            name: 'ElectronicSign',
+            fileName: 'electronic-sign', // 打包后名字
         },
         rollupOptions: {
             external: ['vue', 'echarts', '@vueuse/core'], // 不想要打包的安装包

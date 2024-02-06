@@ -1,8 +1,7 @@
 <script setup lang="ts">
 
 import {ref} from 'vue';
-import axios from "axios";
-import ElectronicSign from './packages/index.ts';
+import {ElectronicSign} from './packages/index.ts';
 
 const Sign = ref();
 
@@ -16,9 +15,6 @@ function down() {
 
 function onsubmit() {
   console.log('获取签名', Sign.value.getSignByFormData());
-  axios.post('http://127.0.0.1:8000/', Sign.value.getSignByFormData()).then(res => {
-    console.log(res);
-  });
 }
 </script>
 
@@ -32,7 +28,7 @@ function onsubmit() {
       backgroundCanvas="black"
       backgroundPadding="#fff"
       color="gold"
-      lineWidth="3"
+      :lineWidth="3"
       ref="Sign"
   />
   <button @click="clearCan()">清空</button>
