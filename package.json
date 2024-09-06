@@ -1,28 +1,44 @@
 {
-  "name": "electronic-sign",
-  "private": false,
-  "version": "1.0.9",
+  "name": "electronic-sign-vue3",
+  "version": "1.2.0",
   "type": "module",
-  "main": "lib/electronic-sign.umd.cjs",
-  "module": "lib/electronic-sign.esm-bundler.js",
+  "description": "电子签名",
+  "author": "BugOrDebug(https://github.com/mdzz-debug)",
+  "types": "dist/index.d.ts",
+  "main": "dist/electronic-sign.js",
+  "module": "dist/electronic-sign.umd.cjs",
+  "keywords": [
+    "electronic-sign",
+    "vue3",
+    "sign",
+    "process",
+    "status",
+    "es6",
+    "javascript",
+    "typescript",
+    "linux",
+    "macos",
+    "windows",
+    "nodejs"
+  ],
   "files": [
-    "lib"
+    "dist",
+    "package.json",
+    "README.md"
   ],
   "scripts": {
-    "package": "npm run build && npm pack",
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.11"
+    "vue": "^3.4.37"
   },
   "devDependencies": {
-    "@types/node": "^20.11.16",
-    "@vitejs/plugin-vue": "^4.5.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8",
-    "vite-plugin-dts": "^3.7.2",
-    "vue-tsc": "^1.8.25"
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.1.0",
+    "vue-tsc": "^2.1.6"
   }
 }
